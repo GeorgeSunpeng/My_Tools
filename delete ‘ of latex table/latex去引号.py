@@ -4,9 +4,10 @@ s=""
 for line in file:
 
     for element in line:
-        if element =="'":
+        if element =="'" or element == '"':
             element =""
         s=s+element
 out.write("%s" %s)
 file.close()
 out.close()
+
